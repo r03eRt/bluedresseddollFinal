@@ -2302,7 +2302,8 @@ function register_themepost() {
         'can_export' => true,
         'rewrite' => array('slug' => 'viajes/%viajes_categories%','with_front' => FALSE),
         'public' => true,
-        'has_archive' => 'viajes',
+        //'has_archive' => 'viajes',
+        'has_archive' => true,
         'capability_type' => 'post'
     );  
     register_post_type( 'viajes', $args );//max 20 charachter cannot contain capital letters and spaces

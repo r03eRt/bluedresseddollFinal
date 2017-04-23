@@ -40,42 +40,21 @@
    	$countries = '';
    	$countriesSelected = '';
 
-	for($i = 0; $i < count(get_field('paises_repeater',280)); $i++){ 
+   	//get the actual link
+   	$actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+   	//explode array to get the slash
+   	$array = explode('/', $actual_link);
 
-		//get countries list
-		$countries .= get_field('paises_repeater', 280)[$i]['country_code'].',';
-		//get countries selected list
-		$countriesSelected .= get_field('paises_repeater', 280)[$i]['country_code'].':color,';
-		// echo get_field('paises_repeater', 280)[$i]['country_slug'];
-		// echo get_field('paises_repeater', 280)[$i]['taxonomy']->name;
-    }
-
-
-   	for($i = 0; $i < count($terms); $i++)
-   	{
-   		//echo $terms[$i]->slug;
-   		//echo '<a id="'.$terms[$i]->name.'" href="http://localhost/'.$postClass[1].'/'.$terms[$i]->slug.'">'.$terms[$i]->name.'</a>';
-
-
-   	}
-
-   		// echo '<div id="map" style="width: 100%; height: 500px;"></div>';
-
-
-   //echo do_shortcode('[mapsvg id="296"]');
-
-
-   	if(get_the_ID() === 274)
-   	{
-   		echo get_the_ID();
+   	//if post type is viajes and no more /viajes/ we are in map neeeded
+   	if(get_post_type(get_the_ID()) == 'viajes' && count($array) < 6)
    		echo do_shortcode('[rvm_map mapid="297"]'); //
-	}
 
+	// if(get_the_ID() === 274)
+ //   	{
+ //   		echo get_the_ID();
+ //   		echo do_shortcode('[rvm_map mapid="297"]'); //
+	// }
 
-	// var_dump($terms[0]->name);
-
-	//echo get_query_var( 'taxonomy' );
-	//echo get_query_var( 'term');
 
 	if($qode_template_name != "") {
 		if($qode_template_name == "blog-large-image.php"){
