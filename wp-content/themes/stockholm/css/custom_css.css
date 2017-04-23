@@ -1,0 +1,121 @@
+
+
+.header_top .q_social_icon_holder span.tiny {
+    font-size: 13px;
+}
+
+.header_top #searchform input[type="text"] {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 10px;
+}
+.sidebar #text-2 .textwidget {
+	border: 0;
+	padding: 0;
+}
+.single_tags a, 
+aside.sidebar .widget .tagcloud a, 
+.widget .tagcloud a {
+	text-decoration: underline;
+	border: 0;
+	padding: 0;
+	margin: 0;
+	line-height: 1em;
+	height: auto;
+}
+.single_tags a:hover, 
+aside.sidebar .widget .tagcloud a:hover, 
+.widget .tagcloud a:hover {
+	background-color: transparent;
+}
+
+div.wpcf7 img.ajax-loader {
+    display: none;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+	.cf7_custom_style_1 input.wpcf7-form-control.wpcf7-submit, .cf7_custom_style_1 input.wpcf7-form-control.wpcf7-submit:not([disabled]) {
+		font-size: 8px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+.cf7_custom_style_1 input.wpcf7-form-control.wpcf7-submit, .cf7_custom_style_1 input.wpcf7-form-control.wpcf7-submit:not([disabled]) {
+		padding-left: 35px;
+		padding-right: 35px;
+	}
+}
+
+li.narrow .second .inner ul {
+    padding: 18px 0 20px;
+}
+
+.blog_holder.blog_centered .pagination {
+text-align: left;
+}
+
+.blog_holder.blog_centered .pagination ul li {
+text-align: center;
+}
+
+.blog_holder.blog_centered .pagination ul li.prev, 
+.blog_holder.blog_centered .pagination ul li.next {
+position: initial;
+}
+
+.pagination {
+margin: 10px 0 60px;
+}
+.blog_holder.blog_single .single_tags a {
+padding-right: 5px;
+}
+header.centered_logo:not(.sticky) .q_logo img {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+.blog_holder.blog_single article.format-link .post_text .post_text_inner:hover .post_info,
+.blog_holder.blog_single article.format-quote .post_text .post_text_inner:hover .post_info,
+.blog_holder.blog_single article.format-link .post_text .post_text_inner:hover .post_info a,
+.blog_holder.blog_single article.format-link .post_text .post_text_inner:hover .post_info a:hover,
+.blog_holder.blog_single article.format-quote .post_text .post_text_inner:hover .post_info a:hover,
+.blog_holder.blog_single article.format-quote .post_text .post_text_inner:hover .post_info a,
+.blog_holder.blog_single article.format-link .post_text .post_text_inner:hover .post_info .time,
+.blog_holder.blog_single article.format-quote .post_text .post_text_inner:hover .post_info .time {
+	color: #868686;
+}
+
+.blog_single.blog_holder article.format-link .post_text .post_text_inner, 
+.blog_single.blog_holder article.format-quote .post_text .post_text_inner {
+	border: 1px solid #c2c2c2;
+    padding: 28px 35px 29px;
+}
+
+div.comment_form {
+    margin: 0 0 65px;
+}
+
+#respond textarea {
+	margin: 0 0 19px 0;
+}
+#commentform .three_columns {
+	margin-bottom: 10px;
+}
+.arrow_carrot-left:before,
+.arrow_carrot-right:before {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+
+body.post-type-archive-viajes #world-map-297 {
+    margin-bottom: 30px;
+}
+
+body.post-type-archive-viajes .container_inner.default_template_holder{
+padding-top:0px!important;
+}
+
+path.jvectormap-region.jvectormap-element:hover {
+    fill-opacity: 0.8;
+}
