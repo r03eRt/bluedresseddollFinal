@@ -51,7 +51,7 @@ if(get_post_meta($id, "qode_content-top-padding", true) != ""){
 				<div class="container"<?php if($background_color != "") { echo " style='background-color:". $background_color ."'";} ?>>
 					<div class="container_inner default_template_holder" <?php if($content_style != "") { echo wp_kses($content_style, array('style')); } ?>>
 				
-					<?php if(($sidebar == "default")||($sidebar == "")) : ?>
+					<?php if(($sidebar == "default") ||($sidebar == "")) : ?>
 						<div class="blog_holder blog_single">
 						<?php 
 							get_template_part('templates/blog/blog_single', 'loop');
@@ -90,7 +90,31 @@ if(get_post_meta($id, "qode_content-top-padding", true) != ""){
 									</div>
 								</div>	
 								<div class="column2"> 
-									<?php get_sidebar(); ?>
+									<?php 
+										$post_type = get_post_type(get_the_ID());
+
+										if($post_type == 'have_an_hate_day'){											
+											echo '<div class="column_inner">';
+											echo '<aside class="sidebar enable_widget_borders center">';
+												dynamic_sidebar('sidebar_hater');
+											echo '</aside';
+											echo '</div>';
+
+										}
+										else if($post_type == 'literatura' || $post_type == 'viajes' || $post_type == 'recomendaciones')
+										{
+											echo '<div class="column_inner">';
+											echo '<aside class="sidebar enable_widget_borders center">';
+												dynamic_sidebar('sidebar_custom');
+											echo '</aside';
+											echo '</div>';
+										}
+										else
+										{
+											get_sidebar(); 	
+										}
+										
+									?>
 								</div>
 							</div>
 						<?php elseif($sidebar == "3" || $sidebar == "4"): ?>

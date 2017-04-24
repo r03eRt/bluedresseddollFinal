@@ -2325,7 +2325,7 @@ function register_themepost() {
             'taxonomies' => array('category', 'have-an-hate-day'),
         	//'has_archive' => true,
         	'has_archive' => false,
-        	'supports' => array( 'title', 'editor', 'thumbnail', 'revisions' ),
+        	'supports' => array( 'title', 'editor', 'thumbnail', 'revisions', 'comments' ),
             'rewrite' => array(
             	'slug' => 'have-an-hate-day'
             ),
@@ -2348,7 +2348,7 @@ function register_themepost() {
             'taxonomies' => array('category', 'recomendaciones '),
         	//'has_archive' => true,
         	'has_archive' => false,
-        	'supports' => array( 'title', 'editor', 'thumbnail', 'revisions' ),
+        	'supports' => array( 'title', 'editor', 'thumbnail', 'revisions', 'comments'),
             'rewrite' => array(
             	'slug' => 'recomendaciones'
             ),
@@ -2371,7 +2371,7 @@ function register_themepost() {
             'taxonomies' => array('category', 'literatura '),
         	//'has_archive' => true,
         	'has_archive' => false,
-        	'supports' => array( 'title', 'editor', 'thumbnail', 'revisions' ),
+        	'supports' => array( 'title', 'editor', 'thumbnail', 'revisions', 'comments' ),
             'rewrite' => array(
             	'slug' => 'literatura'
             ),
@@ -2441,4 +2441,31 @@ function add_custom_post_type_to_query( $query ) {
 }
 add_action( 'pre_get_posts', 'add_custom_post_type_to_query' );
 
+
+/** Exec php on widgets **/
+function exec_php_on_widgets($html){
+	if(strpos($html,"<"."?php") !== false) {
+		ob_start();
+		eval("?".">".$html);
+		$html=ob_get_contents();
+		ob_end_clean();
+	}
+	return $html;
+}
+add_filter('widget_text','exec_php_on_widgets',100);
+
+
+/** Upload svg files **/
+function cc_mime_types($mimes) {
+  $mimes['svg'] = 'image/svg+xml';
+  return $mimes;
+}
+add_filter('upload_mimes', 'cc_mime_types');
+
+
+// /** Sets the comments to allowed by default **/
+function turn_on_comments() { 
+   update_option('default_comment_status', 'open');
+} 
+add_action('update_option', 'turn_on_comments');
 

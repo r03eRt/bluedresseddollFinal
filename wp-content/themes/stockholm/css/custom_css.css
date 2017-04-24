@@ -119,3 +119,11 @@ padding-top:0px!important;
 path.jvectormap-region.jvectormap-element:hover {
     fill-opacity: 0.8;
 }
+#Capa_1{
+width: 40%;
+opacity: 0.0001;
+}
+#Capa_1 line {
+    stroke-dashoffset: 100%;
+    stroke-dasharray: 100%;
+}

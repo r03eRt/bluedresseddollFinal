@@ -18,6 +18,26 @@ if (function_exists('register_sidebar')) {
     ));
 
     register_sidebar(array(
+        'name' => 'Sidebar Hater',
+        'id' => 'sidebar_hater',
+        'description' => 'Hater Sidebar',
+        'before_widget' => '<div id="%1$s" class="widget %2$s posts_holder">',
+        'after_widget' => '</div>',
+        'before_title' => '<h4>',
+        'after_title' => '</h4>'
+    ));
+
+     register_sidebar(array(
+        'name' => 'Sidebar Custom',
+        'id' => 'sidebar_custom',
+        'description' => 'Custom Sidebar',
+        'before_widget' => '<div id="%1$s" class="widget %2$s posts_holder">',
+        'after_widget' => '</div>',
+        'before_title' => '<h4>',
+        'after_title' => '</h4>'
+    ));
+
+    register_sidebar(array(
         'name' => 'Sidebar Page',
         'id' => 'sidebar_page',
         'description' => 'Sidebar for Page',
@@ -213,6 +233,8 @@ if (!function_exists('isUserMadeSidebar')) {
             return false;
         } else if($name == 'WooCommerce Dropdown Widget Area'){
             return false;
+        // } else if ($name == 'Sidebar Custom') {
+        //     return false;
         } else {
             return true;
         }

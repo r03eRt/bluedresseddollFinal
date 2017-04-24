@@ -281,6 +281,25 @@ if(is_array($footer_classes_array) && count($footer_classes_array)) {
 </footer>
 </div>
 </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+<script>
+		var termometro = document.querySelector('#Capa_1');
+		var line = termometro.querySelector('line');
+		var levelIndex = parseInt(document.querySelector('#Capa_1').getAttribute('data-level'));
+		var levelsData = ['88%', '80%', '71%', '62%', '52.5%', '45%', '36%', '37%', '19%', '10%', '0%'];
+
+		if(line)
+		{
+			TweenMax.fromTo(termometro, 1, {opacity: 0.0001, scale: 0.95}, {opacity: 1,scale: 1, ease: Power2.easeInOut}, 0);//0
+			TweenMax.fromTo(line, 2, {strokeDashoffset: '100%'}, {strokeDashoffset: levelsData[levelIndex], ease: Power4.easeInOut}, 1);//0
+		}
+
+
+		
+			
+		
+
+</script>
 <?php wp_footer(); ?>
 </body>
 </html>
