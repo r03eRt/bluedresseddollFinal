@@ -2469,3 +2469,6 @@ function turn_on_comments() {
 } 
 add_action('update_option', 'turn_on_comments');
 
+
+//hide admin bar
+add_filter('show_admin_bar', '__return_false');

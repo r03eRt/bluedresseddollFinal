@@ -40,6 +40,15 @@ global $wp_query;
 
 	<?php wp_head(); ?>
 
+	<style>
+				
+		/*@media (max-width: 480px){
+			html {
+			    margin-top: 10px!important;
+			}
+		}*/
+
+	</style>
 </head>
 
 <body <?php body_class(); ?>>

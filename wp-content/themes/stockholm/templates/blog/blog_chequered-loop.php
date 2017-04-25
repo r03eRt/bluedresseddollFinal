@@ -61,7 +61,7 @@ case "video":
                     <?php if($blog_hide_author == "no") { ?>
                         <div class="post_info">
                             <span class="post_author">
-                            <span><?php _e('By', 'qode'); ?></span>
+                            <span><?php _e('Por', 'qode'); ?></span>
                             <a class="post_author_link" href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>">
                                 <span><?php the_author_meta('display_name'); ?></span>
                             </a>
@@ -95,7 +95,7 @@ case "audio":
                     <?php if($blog_hide_author == "no") { ?>
                         <div class="post_info">
                             <span class="post_author">
-                            <span><?php _e('By', 'qode'); ?></span>
+                            <span><?php _e('Por', 'qode'); ?></span>
                             <a class="post_author_link" href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>">
                                 <span><?php the_author_meta('display_name'); ?></span>
                             </a>
@@ -129,7 +129,7 @@ case "gallery":
                     <?php if($blog_hide_author == "no") { ?>
                         <div class="post_info">
                             <span class="post_author">
-                            <span><?php _e('By', 'qode'); ?></span>
+                            <span><?php _e('Por', 'qode'); ?></span>
                             <a class="post_author_link" href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>">
                                 <span><?php the_author_meta('display_name'); ?></span>
                             </a>
@@ -208,7 +208,7 @@ default:
                     <?php if($blog_hide_author == "no") { ?>
                         <div class="post_info">
                             <span class="post_author">
-                            <span><?php _e('By', 'qode'); ?></span>
+                            <span><?php _e('Por', 'qode'); ?></span>
                             <a class="post_author_link" href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>">
                                 <span><?php the_author_meta('display_name'); ?></span>
                             </a>

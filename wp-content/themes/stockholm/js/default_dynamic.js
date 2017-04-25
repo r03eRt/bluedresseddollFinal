@@ -27,14 +27,16 @@ var scroll_amount_for_fixed_hiding = 200;
 var paspartu_width_init = 0.02;
 var search_header_height = 50;
 var add_for_admin_bar = 0;
-	header_height = 100;
+	header_height = 50;
 	min_header_height_scroll = 60;
+	scroll_amount_for_sticky = 50;
+        scroll_amount_for_fixed_hiding = 50;
 var logo_height = 130; // stockholm logo height
 var logo_width = 280; // stockholm logo width
-	logo_height = 124;
-	logo_width = 458;
+	logo_height = 282;
+	logo_width = 286;
 	
-	header_top_height = 33;
+	header_top_height = 0;
 
 
 

@@ -65,12 +65,12 @@ $_post_format = get_post_format();
 								<span><?php the_time(get_option('date_format')); ?></span>
 							</span>
 							<span class="post_category">
-								<span><?php _e('In', 'qode'); ?></span>
+								<span><?php _e('En', 'qode'); ?></span>
 								<span><?php the_category(', '); ?></span>
 							</span>
 							<?php if($blog_hide_author == "no") { ?>
                                 <span class="post_author">
-									<span><?php _e('By', 'qode'); ?></span>
+									<span><?php _e('Por', 'qode'); ?></span>
 									<a class="post_author_link" href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>">
 										<span><?php the_author_meta('display_name'); ?></span>
 									</a>
@@ -126,12 +126,12 @@ $_post_format = get_post_format();
 								<span><?php the_time(get_option('date_format')); ?></span>
 							</span>
 							<span class="post_category">
-								<span><?php _e('In', 'qode'); ?></span>
+								<span><?php _e('En', 'qode'); ?></span>
 								<span><?php the_category(', '); ?></span>
 							</span>
 							<?php if($blog_hide_author == "no") { ?>
                                 <span class="post_author">
-									<span><?php _e('By', 'qode'); ?></span>
+									<span><?php _e('Por', 'qode'); ?></span>
 									<a class="post_author_link" href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>">
 										<span><?php the_author_meta('display_name'); ?></span>
 									</a>
@@ -201,12 +201,12 @@ $_post_format = get_post_format();
 								<span><?php the_time(get_option('date_format')); ?></span>
 							</span>
 							<span class="post_category">
-								<span><?php _e('In', 'qode'); ?></span>
+								<span><?php _e('En', 'qode'); ?></span>
 								<span><?php the_category(', '); ?></span>
 							</span>
 							<?php if($blog_hide_author == "no") { ?>
                                 <span class="post_author">
-									<span><?php _e('By', 'qode'); ?></span>
+									<span><?php _e('Por', 'qode'); ?></span>
 									<a class="post_author_link" href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>">
 										<span><?php the_author_meta('display_name'); ?></span>
 									</a>
@@ -262,12 +262,12 @@ $_post_format = get_post_format();
 								<span><?php the_time(get_option('date_format')); ?></span>
 							</span>
 							<span class="post_category">
-								<span><?php _e('In', 'qode'); ?></span>
+								<span><?php _e('En', 'qode'); ?></span>
 								<span><?php the_category(', '); ?></span>
 							</span>
 							<?php if($blog_hide_author == "no") { ?>
                                 <span class="post_author">
-									<span><?php _e('By', 'qode'); ?></span>
+									<span><?php _e('Por', 'qode'); ?></span>
 									<a class="post_author_link" href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>">
 										<span><?php the_author_meta('display_name'); ?></span>
 									</a>
@@ -313,12 +313,12 @@ $_post_format = get_post_format();
 									<span><?php the_time(get_option('date_format')); ?></span>
 								</span>
 								<span class="post_category">
-									<span><?php _e('In', 'qode'); ?></span>
+									<span><?php _e('En', 'qode'); ?></span>
 									<span><?php the_category(', '); ?></span>
 								</span>
 								<?php if($blog_hide_author == "no") { ?>
 									<span class="post_author">
-										<span><?php _e('By', 'qode'); ?></span>
+										<span><?php _e('Por', 'qode'); ?></span>
 										<a class="post_author_link" href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>">
 											<span><?php the_author_meta('display_name'); ?></span>
 										</a>
@@ -375,12 +375,12 @@ $_post_format = get_post_format();
 								<span><?php the_time(get_option('date_format')); ?></span>
 							</span>
 							<span class="post_category">
-								<span><?php _e('In', 'qode'); ?></span>
+								<span><?php _e('En', 'qode'); ?></span>
 								<span><?php the_category(', '); ?></span>
 							</span>
 							<?php if($blog_hide_author == "no") { ?>
                                 <span class="post_author">
-									<span><?php _e('By', 'qode'); ?></span>
+									<span><?php _e('Por', 'qode'); ?></span>
 									<a class="post_author_link" href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>">
 										<span><?php the_author_meta('display_name'); ?></span>
 									</a>

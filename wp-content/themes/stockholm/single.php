@@ -95,7 +95,7 @@ if(get_post_meta($id, "qode_content-top-padding", true) != ""){
 
 										if($post_type == 'have_an_hate_day'){											
 											echo '<div class="column_inner">';
-											echo '<aside class="sidebar enable_widget_borders center">';
+											echo '<aside class="sidebar enable_widget_borders center sidebar_hater">';
 												dynamic_sidebar('sidebar_hater');
 											echo '</aside';
 											echo '</div>';

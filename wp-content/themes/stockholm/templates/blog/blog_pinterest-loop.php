@@ -53,7 +53,7 @@ switch ($_post_format) {
 					<h4><a href="<?php the_permalink(); ?>" target="_self" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h4>
 					<div class="post_info">
 						<span class="post_category">
-							<span><?php _e('In', 'qode'); ?></span>
+							<span><?php _e('En', 'qode'); ?></span>
 							<span><?php the_category(', '); ?></span>
 						</span>
 					</div>
@@ -68,7 +68,7 @@ switch ($_post_format) {
 						<div class="post_author_holder">
 							<?php if($blog_hide_author == "no") { ?>
 								<div class="post_author">
-									<span><?php _e('By', 'qode'); ?></span> <a class="post_author_link" href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>"><span><?php the_author_meta('display_name'); ?></span></a>
+									<span><?php _e('Por', 'qode'); ?></span> <a class="post_author_link" href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>"><span><?php the_author_meta('display_name'); ?></span></a>
 								</div>
 							<?php } ?>
 							<?php if($blog_hide_comments != "yes"){ ?>
@@ -106,7 +106,7 @@ switch ($_post_format) {
 					<h4><a href="<?php the_permalink(); ?>" target="_self" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h4>
 					<div class="post_info">
 						<span class="post_category">
-							<span><?php _e('In', 'qode'); ?></span>
+							<span><?php _e('En', 'qode'); ?></span>
 							<span><?php the_category(', '); ?></span>
 						</span>
 					</div>
@@ -121,7 +121,7 @@ switch ($_post_format) {
 						<div class="post_author_holder">
 							<?php if($blog_hide_author == "no") { ?>
 								<div class="post_author">
-									<span><?php _e('By', 'qode'); ?></span> <a class="post_author_link" href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>"><span><?php the_author_meta('display_name'); ?></span></a>
+									<span><?php _e('Por', 'qode'); ?></span> <a class="post_author_link" href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>"><span><?php the_author_meta('display_name'); ?></span></a>
 								</div>
 							<?php } ?>
 							<?php if($blog_hide_comments != "yes"){ ?>
@@ -161,7 +161,7 @@ switch ($_post_format) {
 							<div class="post_author_holder">
 								<?php if($blog_hide_author == "no") { ?>
 									<div class="post_author">
-										<span><?php _e('By', 'qode'); ?></span> <a class="post_author_link" href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>"><span><?php the_author_meta('display_name'); ?></span></a>
+										<span><?php _e('Por', 'qode'); ?></span> <a class="post_author_link" href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>"><span><?php the_author_meta('display_name'); ?></span></a>
 									</div>
 								<?php } ?>
 								<?php if($blog_hide_comments != "yes"){ ?>
@@ -203,7 +203,7 @@ switch ($_post_format) {
 					<h4><a href="<?php the_permalink(); ?>" target="_self" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h4>
 					<div class="post_info">
 						<span class="post_category">
-							<span><?php _e('In', 'qode'); ?></span>
+							<span><?php _e('En', 'qode'); ?></span>
 							<span><?php the_category(', '); ?></span>
 						</span>
 					</div>
@@ -223,7 +223,7 @@ switch ($_post_format) {
 						<div class="post_author_holder">
 							<?php if($blog_hide_author == "no") { ?>
 								<div class="post_author">
-									<span><?php _e('By', 'qode'); ?></span> <a class="post_author_link" href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>"><span><?php the_author_meta('display_name'); ?></span></a>
+									<span><?php _e('Por', 'qode'); ?></span> <a class="post_author_link" href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>"><span><?php the_author_meta('display_name'); ?></span></a>
 								</div>
 							<?php } ?>
 							<?php if($blog_hide_comments != "yes"){ ?>
@@ -266,7 +266,7 @@ switch ($_post_format) {
 							<div class="post_author_holder">
 								<?php if($blog_hide_author == "no") { ?>
 									<div class="post_author">
-										<span><?php _e('By', 'qode'); ?></span> <a class="post_author_link" href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>"><span><?php the_author_meta('display_name'); ?></span></a>
+										<span><?php _e('Por', 'qode'); ?></span> <a class="post_author_link" href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>"><span><?php the_author_meta('display_name'); ?></span></a>
 									</div>
 								<?php } ?>
 								<?php if($blog_hide_comments != "yes"){ ?>
@@ -301,7 +301,7 @@ switch ($_post_format) {
 					<h4><a href="<?php the_permalink(); ?>" target="_self" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h4>
 					<div class="post_info">
 						<span class="post_category">
-							<span><?php _e('In', 'qode'); ?></span>
+							<span><?php _e('En', 'qode'); ?></span>
 							<span><?php the_category(', '); ?></span>
 						</span>
 					</div>
@@ -316,7 +316,7 @@ switch ($_post_format) {
 						<div class="post_author_holder">
 							<?php if($blog_hide_author == "no") { ?>
 								<div class="post_author">
-									<span><?php _e('By', 'qode'); ?></span> <a class="post_author_link" href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>"><span><?php the_author_meta('display_name'); ?></span></a>
+									<span><?php _e('Por', 'qode'); ?></span> <a class="post_author_link" href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>"><span><?php the_author_meta('display_name'); ?></span></a>
 								</div>
 							<?php } ?>
 							<?php if($blog_hide_comments != "yes"){ ?>

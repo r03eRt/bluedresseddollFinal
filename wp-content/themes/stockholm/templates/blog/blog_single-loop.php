@@ -76,13 +76,19 @@ $_post_format = get_post_format();
 							<?php } ?>
 							<?php if(!$blog_single_hide_category){ ?>
 								<span class="post_category">
-									<span><?php _e('In', 'qode'); ?></span>
-									<span><?php the_category(', '); ?></span>
+									<span><?php _e('En', 'qode'); ?></span>
+									<span>
+										<?php
+										if(get_post_type(get_the_ID()) == 'viajes')
+											echo get_post_type(get_the_ID());
+										else
+											the_category(', ');
+										?></span>
 								</span>
 							<?php } ?>
 							<?php if($blog_hide_author == "no") { ?>
                                 <span class="post_author">
-									<span><?php _e('By', 'qode'); ?></span>
+									<span><?php _e('Por', 'qode'); ?></span>
 									<a class="post_author_link" href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>">
 										<span><?php the_author_meta('display_name'); ?></span>
 									</a>
@@ -125,13 +131,19 @@ $_post_format = get_post_format();
 							<?php } ?>
 							<?php if(!$blog_single_hide_category){ ?>
 								<span class="post_category">
-									<span><?php _e('In', 'qode'); ?></span>
-									<span><?php the_category(', '); ?></span>
+									<span><?php _e('En', 'qode'); ?></span>
+									<span>
+										<?php
+										if(get_post_type(get_the_ID()) == 'viajes')
+											echo get_post_type(get_the_ID());
+										else
+											the_category(', ');
+										?></span>
 								</span>
 							<?php } ?>
 							<?php if($blog_hide_author == "no") { ?>
                                 <span class="post_author">
-									<span><?php _e('By', 'qode'); ?></span>
+									<span><?php _e('Por', 'qode'); ?></span>
 									<a class="post_author_link" href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>">
 										<span><?php the_author_meta('display_name'); ?></span>
 									</a>
@@ -171,13 +183,19 @@ $_post_format = get_post_format();
 							<?php } ?>
 							<?php if(!$blog_single_hide_category){ ?>
 								<span class="post_category">
-									<span><?php _e('In', 'qode'); ?></span>
-									<span><?php the_category(', '); ?></span>
+									<span><?php _e('En', 'qode'); ?></span>
+									<span>
+										<?php
+										if(get_post_type(get_the_ID()) == 'viajes')
+											echo get_post_type(get_the_ID());
+										else
+											the_category(', ');
+										?></span>
 								</span>
 							<?php } ?>
 							<?php if($blog_hide_author == "no") { ?>
                                 <span class="post_author">
-									<span><?php _e('By', 'qode'); ?></span>
+									<span><?php _e('Por', 'qode'); ?></span>
 									<a class="post_author_link" href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>">
 										<span><?php the_author_meta('display_name'); ?></span>
 									</a>
@@ -236,13 +254,19 @@ $_post_format = get_post_format();
 							<?php } ?>
 							<?php if(!$blog_single_hide_category){ ?>
 								<span class="post_category">
-									<span><?php _e('In', 'qode'); ?></span>
-									<span><?php the_category(', '); ?></span>
+									<span><?php _e('En', 'qode'); ?></span>
+									<span>
+										<?php
+										if(get_post_type(get_the_ID()) == 'viajes')
+											echo get_post_type(get_the_ID());
+										else
+											the_category(', ');
+										?></span>
 								</span>
 							<?php } ?>
 							<?php if($blog_hide_author == "no") { ?>
                                 <span class="post_author">
-									<span><?php _e('By', 'qode'); ?></span>
+									<span><?php _e('Por', 'qode'); ?></span>
 									<a class="post_author_link" href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>">
 										<span><?php the_author_meta('display_name'); ?></span>
 									</a>
@@ -288,13 +312,19 @@ $_post_format = get_post_format();
 								<?php } ?>
 								<?php if(!$blog_single_hide_category){ ?>
 									<span class="post_category">
-										<span><?php _e('In', 'qode'); ?></span>
-										<span><?php the_category(', '); ?></span>
+										<span><?php _e('En', 'qode'); ?></span>
+										<span>
+											<?php
+											if(get_post_type(get_the_ID()) == 'viajes')
+												echo get_post_type(get_the_ID());
+											else
+												the_category(', ');
+											?></span>
 									</span>
 								<?php } ?>
 								<?php if($blog_hide_author == "no") { ?>
 	                                <span class="post_author">
-										<span><?php _e('By', 'qode'); ?></span>
+										<span><?php _e('Por', 'qode'); ?></span>
 										<a class="post_author_link" href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>">
 											<span><?php the_author_meta('display_name'); ?></span>
 										</a>
@@ -343,13 +373,19 @@ $_post_format = get_post_format();
 							<?php } ?>
 							<?php if(!$blog_single_hide_category){ ?>
 								<span class="post_category">
-									<span><?php _e('In', 'qode'); ?></span>
-									<span><?php the_category(', '); ?></span>
+									<span><?php _e('En', 'qode'); ?></span>
+									<span>
+										<?php
+										if(get_post_type(get_the_ID()) == 'viajes')
+											echo get_post_type(get_the_ID());
+										else
+											the_category(', ');
+										?></span>
 								</span>
 							<?php } ?>
 							<?php if($blog_hide_author == "no") { ?>
                                 <span class="post_author">
-									<span><?php _e('By', 'qode'); ?></span>
+									<span><?php _e('Por', 'qode'); ?></span>
 									<a class="post_author_link" href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>">
 										<span><?php the_author_meta('display_name'); ?></span>
 									</a>

@@ -1,5 +1,13 @@
 
 
+
+
+
+
+
+
+
+
 .header_top .q_social_icon_holder span.tiny {
     font-size: 13px;
 }
@@ -123,7 +131,160 @@ path.jvectormap-region.jvectormap-element:hover {
 width: 40%;
 opacity: 0.0001;
 }
+
 #Capa_1 line {
     stroke-dashoffset: 100%;
     stroke-dasharray: 100%;
 }
+
+.map-container {
+
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+@media(min-width: 768px){
+    img.normal, img.sticky{
+        height: 110%!important
+    }
+	 .q_logo {
+	    height: 170px;
+	}
+}
+
+header.fixed_hiding.centered_logo .header_inner_left {
+    margin: 5px 0px 10px;
+    display: table;
+    width: 100%;
+}
+
+#wpadminbar{
+}
+
+p {
+    font-size: 14px;
+    margin-bottom: 12px;
+    line-height: 22px;
+}
+
+
+aside.sidebar_hater .widget:first-child p {
+    font-size: 12px;
+    line-height: 16px;
+    text-align: left;
+margin-bottom: 0px;
+}
+
+@font-face {
+    font-family:'NovitoNova';
+    src: url('../fonts/NovitoNova-Regular.eot');
+	src: url('../fonts/NovitoNova-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/NovitoNova-Regular.woff2') format('woff2'),
+		url('../fonts/NovitoNova-Regular.woff') format('woff'),
+		url('../fonts/NovitoNova-Regular.svg#../fonts/NovitoNova-Regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-00FE;
+}
+
+
+@font-face {
+    font-family:'NovitoNova Thin';
+    src: url('../fonts/NovitoNova-Thin.eot');
+    src: url('../fonts/NovitoNova-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NovitoNova-Thin.woff2') format('woff2'),
+        url('../fonts/NovitoNova-Thin.woff') format('woff'),
+        url('../fonts/NovitoNova-Thin.svg#NovitoNova-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-00BB;
+}
+
+.blog_holder article .post_image a:hover .post_overlay{
+	opacity: 0.4;
+}
+
+.content.content_top_margin {
+    margin-top: 180px !important;
+}
+
+@media(max-width: 768px){
+    .q_logo{
+        height: initial!important;
+    }
+
+    header .q_logo img.normal{
+    	display: none!important;
+    }
+
+    header .q_logo img.sticky{
+    	display: block!important;
+    	opacity: 1!important;
+    }
+    
+    .logo_wrapper {
+	    display: table;
+	    height: 100px;
+	    left: 60px;
+	    transform: translate3d(-50%,0,0);
+	    position: absolute;
+	    /* background: red; */
+	}
+
+	.holeder_for_hidden_menu {
+		display: none;
+	}
+
+	.header_top_bottom_holder {
+		position: fixed!important;
+		width: 100%;
+	}
+
+	header {
+		margin-bottom: 60px;
+	}
+}
+
+
+
+@media(min-width: 769px) and (max-width: 992px){
+    .q_logo{
+        height: initial!important;
+    }
+
+    header .q_logo img.normal{
+    	display: none!important;
+    	
+    }
+
+
+    header .q_logo img.sticky{
+    	display: block!important;
+    	opacity: 1!important;    	
+    }
+    
+    .logo_wrapper {
+	    display: table;
+	    height: 100px;
+	    left: 60px;
+	    transform: translate3d(-50%,0,0);
+	    position: absolute;
+	    /* background: red; */
+	}
+
+	.holeder_for_hidden_menu {
+		display: none;
+	}
+
+	.header_top_bottom_holder {
+		position: fixed!important;
+		width: 100%;
+	}
+
+	header {
+		margin-bottom: 60px;
+	}
+}
+

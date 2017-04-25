@@ -56,7 +56,7 @@ switch ($_post_format) {
 							</span>
                             <?php if($blog_hide_author == "no") { ?>
                                 <span class="post_author">
-									<span><?php _e('By', 'qode'); ?></span>
+									<span><?php _e('Por', 'qode'); ?></span>
                                     <span><?php the_author_meta('display_name'); ?></span>
 								</span>
                             <?php } ?>
@@ -86,7 +86,7 @@ switch ($_post_format) {
 							</span>
                             <?php if($blog_hide_author == "no") { ?>
                                 <span class="post_author">
-									<span><?php _e('By', 'qode'); ?></span>
+									<span><?php _e('Por', 'qode'); ?></span>
                                     <span><?php the_author_meta('display_name'); ?></span>
 								</span>
                             <?php } ?>
@@ -116,7 +116,7 @@ switch ($_post_format) {
 							</span>
                             <?php if($blog_hide_author == "no") { ?>
                                 <span class="post_author">
-									<span><?php _e('By', 'qode'); ?></span>
+									<span><?php _e('Por', 'qode'); ?></span>
                                     <span><?php the_author_meta('display_name'); ?></span>
 								</span>
                             <?php } ?>
@@ -146,7 +146,7 @@ switch ($_post_format) {
 							</span>
                             <?php if($blog_hide_author == "no") { ?>
                                 <span class="post_author">
-									<span><?php _e('By', 'qode'); ?></span>
+									<span><?php _e('Por', 'qode'); ?></span>
                                     <span><?php the_author_meta('display_name'); ?></span>
 								</span>
                             <?php } ?>
@@ -176,7 +176,7 @@ switch ($_post_format) {
 							</span>
                             <?php if($blog_hide_author == "no") { ?>
                                 <span class="post_author">
-									<span><?php _e('By', 'qode'); ?></span>
+									<span><?php _e('Por', 'qode'); ?></span>
                                     <span><?php the_author_meta('display_name'); ?></span>
 								</span>
                             <?php } ?>
@@ -206,7 +206,7 @@ switch ($_post_format) {
 							</span>
                             <?php if($blog_hide_author == "no") { ?>
                                 <span class="post_author">
-									<span><?php _e('By', 'qode'); ?></span>
+									<span><?php _e('Por', 'qode'); ?></span>
                                     <span><?php the_author_meta('display_name'); ?></span>
 								</span>
                             <?php } ?>
