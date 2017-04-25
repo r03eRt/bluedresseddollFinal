@@ -2322,7 +2322,7 @@ function register_themepost() {
             'menu_position' => 20,
             //'taxonomies' => array('category'),
             //'taxonomies' => array('category', 'have-an-hate-day'),
-            'taxonomies' => array('category', 'have-an-hate-day'),
+            'taxonomies' => array('category', 'have-an-hate-day', 'post_tag'),
         	//'has_archive' => true,
         	'has_archive' => false,
         	'supports' => array( 'title', 'editor', 'thumbnail', 'revisions', 'comments' ),
@@ -2345,7 +2345,7 @@ function register_themepost() {
             'menu_position' => 20,
             //'taxonomies' => array('category'),
             //'taxonomies' => array('category', 'have-an-hate-day'),
-            'taxonomies' => array('category', 'recomendaciones '),
+            'taxonomies' => array('category', 'recomendaciones', 'post_tag'),
         	//'has_archive' => true,
         	'has_archive' => false,
         	'supports' => array( 'title', 'editor', 'thumbnail', 'revisions', 'comments'),
@@ -2368,10 +2368,10 @@ function register_themepost() {
             'menu_position' => 20,
             //'taxonomies' => array('category'),
             //'taxonomies' => array('category', 'have-an-hate-day'),
-            'taxonomies' => array('category', 'literatura '),
+            'taxonomies' => array('category', 'literatura', 'post_tag'),
         	//'has_archive' => true,
         	'has_archive' => false,
-        	'supports' => array( 'title', 'editor', 'thumbnail', 'revisions', 'comments' ),
+        	'supports' => array( 'title', 'editor', 'thumbnail', 'revisions', 'comments'),
             'rewrite' => array(
             	'slug' => 'literatura'
             ),
@@ -2440,6 +2440,15 @@ function add_custom_post_type_to_query( $query ) {
   }
 }
 add_action( 'pre_get_posts', 'add_custom_post_type_to_query' );
+
+
+/** add custom psot types to search and tag **/
+function post_type_tags_fix($request) {
+    if ( isset($request['tag']) && !isset($request['post_type']) )
+    $request['post_type'] = 'any';
+    return $request;
+} 
+add_filter('request', 'post_type_tags_fix');
 
 
 /** Exec php on widgets **/
