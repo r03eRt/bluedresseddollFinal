@@ -2435,7 +2435,10 @@ add_action( 'save_post', 'post_auto_cat' );
 
 /** Add custom post type to main loop**/
 function add_custom_post_type_to_query( $query ) {
-  if ( is_home() || is_category() ) {//|| is_admin()
+  //if ( is_home() || is_category() ) {//|| is_admin()
+  if ( is_home() || (is_category() || is_tag()) && empty( $query->query_vars['suppress_filters'] ) ) {//|| is_admin()
+
+
     $query->set( 'post_type', array('post', 'viajes', 'have_an_hate_day', 'recomendaciones', 'literatura') );
   }
 }
