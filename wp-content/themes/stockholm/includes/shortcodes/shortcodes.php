@@ -2966,7 +2966,7 @@ if (!function_exists('portfolio_list')) {
 			$html .= "</div>";
 			if (get_next_posts_link()) {
 				if ($show_load_more == "yes" || $show_load_more == "") {
-					$html .= '<div class="portfolio_paging"><span rel="' . $wp_query->max_num_pages . '" class="load_more">' . get_next_posts_link(__('Show more', 'qode')) . '</span></div>';
+					$html .= '<div class="portfolio_paging"><span rel="' . $wp_query->max_num_pages . '" class="load_more">' . get_next_posts_link(__('Leer más', 'qode')) . '</span></div>';
 					$html .= '<div class="portfolio_paging_loading"><a href="javascript: void(0)" class="qbutton">'.__('Loading...', 'qode').'</a></div>';
 				}
 			}
@@ -3335,7 +3335,7 @@ if (!function_exists('portfolio_list')) {
 			$html .= "</div>";
 			if (get_next_posts_link()) {
 				if ($show_load_more == "yes" || $show_load_more == "") {
-					$html .= '<div class="portfolio_paging"><span rel="' . $wp_query->max_num_pages . '" class="load_more">' . get_next_posts_link(__('Show more', 'qode')) . '</span></div>';
+					$html .= '<div class="portfolio_paging"><span rel="' . $wp_query->max_num_pages . '" class="load_more">' . get_next_posts_link(__('Leer más', 'qode')) . '</span></div>';
 					$html .= '<div class="portfolio_paging_loading"><a href="javascript: void(0)" class="qbutton">'.__('Loading...', 'qode').'</a></div>';
 				}
 			}

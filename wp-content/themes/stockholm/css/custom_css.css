@@ -8,8 +8,6 @@
 
 
 
-
-
 .header_top .q_social_icon_holder span.tiny {
     font-size: 13px;
 }
@@ -210,6 +208,35 @@ margin-bottom: 0px;
 
 .content.content_top_margin {
     margin-top: 180px !important;
+}
+
+#text-5 .textwidget{
+    padding: 15px 12px;
+}
+
+p.sobre-mi {
+    font-size: 12px;
+    margin-bottom: 12px;
+    line-height: 16px;
+    text-align: center;
+}
+
+.widget .tagcloud a {
+    color: #161616!important;
+    padding: 1px 5px!important;
+    border: 1px solid #161616!important;
+    background-color: #ffffff!important;
+    -webkit-transition: 0.3s all linear;
+    transition: 0.3s all linear;
+    text-decoration:none!important;
+
+}
+
+.widget .tagcloud a:hover {
+    color: #ffffff!important;
+    padding: 1px 5px!important;
+    border: 1px solid #161616!important;
+    background-color: #161616!important;
 }
 
 @media(max-width: 768px){

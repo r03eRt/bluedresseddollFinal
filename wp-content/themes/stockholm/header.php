@@ -702,7 +702,7 @@ global $qode_toolbar;
 				<div class="fullscreen_search_inner">
 					<form role="search" id="searchform" action="<?php echo esc_url(home_url('/')); ?>" class="fullscreen_search_form" method="get">
 						<div class="form_holder">
-							<input type="text" placeholder="<?php _e("Type in what you're looking for", 'qode'); ?>" name="s" class="qode_search_field" autocomplete="off" />
+							<input type="text" placeholder="<?php _e("¿Qué estás buscando?", 'qode'); ?>" name="s" class="qode_search_field" autocomplete="off" />
 							<input type="submit" class="search_submit" value="&#xf002;" />
 						</div>
 					</form>

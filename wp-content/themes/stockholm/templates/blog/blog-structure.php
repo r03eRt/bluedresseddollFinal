@@ -193,11 +193,11 @@
     if($pagination_masonry == "load_more") {
 		if (get_next_posts_link()) { ?>
 			<div class="blog_load_more_button_holder">
-				<div class="blog_load_more_button"><span rel="<?php echo esc_attr($wp_query->max_num_pages); ?>"><?php echo get_next_posts_link(__('Show more', 'qode')); ?></span></div>
+				<div class="blog_load_more_button"><span rel="<?php echo esc_attr($wp_query->max_num_pages); ?>"><?php echo get_next_posts_link(__('Leer más', 'qode')); ?></span></div>
 			</div>
 		<?php } ?>
 	 <?php } elseif($pagination_masonry == "infinite_scroll") { ?>
-		<div class="blog_infinite_scroll_button"><span rel="<?php echo esc_attr($wp_query->max_num_pages); ?>"><?php echo get_next_posts_link(__('Show more', 'qode')); ?></span></div>
+		<div class="blog_infinite_scroll_button"><span rel="<?php echo esc_attr($wp_query->max_num_pages); ?>"><?php echo get_next_posts_link(__('Leer más', 'qode')); ?></span></div>
 	<?php }else { ?>
 		<?php if($qode_options['pagination'] != "0") : ?>
 			<?php pagination($wp_query->max_num_pages, $blog_page_range, $paged); ?>
